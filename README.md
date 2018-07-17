@@ -14,7 +14,7 @@ Prerequisites:
 
 * Docker 1.5 or newer
 
-GitHub repository [jpmml/openscoring-docker] (https://github.com/jpmml/openscoring-docker) contains a `Dockerfile` for Openscoring command-line server application.
+GitHub repository [audciz/openscoring-docker] (https://github.com/audciz/openscoring-docker) contains a `Dockerfile` for Openscoring command-line server application.
 
 Building the `1.4.2` Openscoring application image from the `HEAD` revision:
 
