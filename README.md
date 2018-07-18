@@ -19,7 +19,7 @@ GitHub repository [audciz/openscoring-docker] (https://github.com/audciz/opensco
 Building the `1.4.2` Openscoring application image from the `HEAD` revision:
 
 ```
-sudo docker build -t jpmml/openscoring:1.4.2 https://github.com/audciz/openscoring-docker
+sudo docker build -t jpmml/openscoring:1.4.2 https://github.com/audciz/openscoring-docker.git
 ```
 
 # Usage #
