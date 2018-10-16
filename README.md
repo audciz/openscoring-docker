@@ -19,7 +19,7 @@ GitHub repository [audciz/openscoring-docker] (https://github.com/audciz/opensco
 Building the `1.4.2` Openscoring application image from the `HEAD` revision:
 
 ```
-sudo docker build -t jpmml/openscoring:1.4.2 https://github.com/audciz/openscoring-docker.git
+sudo docker build -t audciz/openscoring https://github.com/audciz/openscoring-docker.git
 ```
 
 # Usage #
@@ -29,7 +29,7 @@ sudo docker build -t jpmml/openscoring:1.4.2 https://github.com/audciz/openscori
 Running the image in the `host` networking mode:
 
 ```
-sudo docker run --net="host" jpmml/openscoring:1.4.2
+sudo docker run --net="host" audciz/openscoring
 ```
 
 The container shares host's network stack. It is possible to use privileged HTTP methods `PUT` and `DELETE` for deploying and undeploying models, respectively.
@@ -39,7 +39,7 @@ The container shares host's network stack. It is possible to use privileged HTTP
 Running the image in the `bridge` (default) networking mode:
 
 ```
-sudo docker run --net="bridge" -p 8080:8080 -v /path/to/pmml:/openscoring/pmml jpmml/openscoring:1.4.2 --model-dir /openscoring/pmml
+sudo docker run --net="bridge" -p 8080:8080 -v /path/to/pmml:/openscoring/pmml audciz/openscoring --model-dir /openscoring/pmml
 ```
 
 The container uses Docker's default network setup, which is separate from host's network stack. It is impossible to use privileged HTTP methods. The only option for deploying and undeploying models is via the model auto-deployment directory `/openscoring/pmml`. This directory is mapped to host's filesystem directory `/path/to/pmml` using the *data volume* mechanism.
