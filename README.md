@@ -16,7 +16,7 @@ Prerequisites:
 
 GitHub repository [audciz/openscoring-docker] (https://github.com/audciz/openscoring-docker) contains a `Dockerfile` for Openscoring command-line server application.
 
-Building the `1.4.2` Openscoring application image from the `HEAD` revision:
+Building the `1.4.3` Openscoring application image from the `HEAD` revision:
 
 ```
 sudo docker build -t audciz/openscoring https://github.com/audciz/openscoring-docker.git
